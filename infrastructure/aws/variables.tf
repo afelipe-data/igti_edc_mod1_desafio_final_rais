@@ -17,10 +17,10 @@ locals {
     Project      = "RAIS"
     ManagedBy    = "Terraform"
     Department   = "XPed",
-    Provider     = "Afelipe",
-    Owner        = "Data Engineering"
-    BusinessUnit = "Data"
-    Billing      = "Infrastructure"
+    # Provider     = "Afelipe",
+    # Owner        = "Data Engineering"
+    # BusinessUnit = "Data"
+    # Billing      = "Infrastructure"
     Environment  = terraform.workspace
     UserEmail    = "afelipe.data@gmail.com"
   }
