@@ -2,7 +2,7 @@ import boto3
 from datetime import datetime
 
 sageclient = boto3.client('sagemaker', region_name='us-east-2')
-sagemaker_role='arn:aws:iam::127012818163:role/service-role/AmazonSageMaker-ExecutionRole-20210518T105032'
+sagemaker_role='arn:aws:iam::176031035982:role/service-role/AmazonSageMaker-ExecutionRole-20210518T105032'
 
 def handler(event, context):
     
@@ -13,7 +13,7 @@ def handler(event, context):
                 {
                     'OutputName': 'rais',
                     'S3Output': {
-                        'S3Uri': 's3://igti-ney-rais-prod-landing-zone-127012818163/rais',
+                        'S3Uri': 's3://xp-afelipe-rais-prod-landing-zone-176031035982/rais',
                         'LocalPath': '/opt/ml/processing/output/rais',
                         'S3UploadMode': 'EndOfJob'
                     }
@@ -29,7 +29,7 @@ def handler(event, context):
             }
         },
         AppSpecification={
-            'ImageUri': '127012818163.dkr.ecr.us-east-2.amazonaws.com/igti-ney-prod-extract-rais:latest'
+            'ImageUri': '176031035982.dkr.ecr.us-east-2.amazonaws.com/xp-afelipe-prod-extract-rais:latest'
         },
         RoleArn=sagemaker_role
     )

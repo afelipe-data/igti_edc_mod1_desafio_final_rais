@@ -3,11 +3,11 @@ variable "region_id" {
 }
 
 variable "prefix" {
-  default = "igti-ney-rais"
+  default = "xp-afelipe-rais"
 }
 
 variable "account" {
-  default = 127012818163
+  default = 176031035982
 }
 
 # Prefix configuration and project common tags
@@ -17,12 +17,12 @@ locals {
     Project      = "RAIS"
     ManagedBy    = "Terraform"
     Department   = "XPed",
-    Provider     = "A3DATA",
+    Provider     = "Afelipe",
     Owner        = "Data Engineering"
     BusinessUnit = "Data"
     Billing      = "Infrastructure"
     Environment  = terraform.workspace
-    UserEmail    = "neylson.crepalde@a3data.com.br"
+    UserEmail    = "afelipe.data@gmail.com"
   }
 }
 
