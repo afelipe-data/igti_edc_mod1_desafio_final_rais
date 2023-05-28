@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: terraform plan
         run: |
-          chmod -R +x ./CI/scripts
+          chmod -r +x ./CI/scripts
           ./CI/scripts/plan.sh prod
   prod_apply:
     name: Production Apply
