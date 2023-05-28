@@ -3,7 +3,7 @@ variable "region_id" {
 }
 
 variable "prefix" {
-  default = "xp-afelipe-rais"
+  default = "xp-afelipe-rais2"
 }
 
 variable "account" {
