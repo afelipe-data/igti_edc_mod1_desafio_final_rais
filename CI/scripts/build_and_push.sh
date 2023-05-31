@@ -4,7 +4,7 @@ set -e
 cd etl/
 
 # Push to AWS ECR
-aws ecr get-login-password --region sa-east-1 | docker login --username AWS --password-stdin 127012818163.dkr.ecr.sa-east-1.amazonaws.com
-docker build -t igti-ney-prod-extract-rais .
-docker tag igti-ney-prod-extract-rais:latest 127012818163.dkr.ecr.sa-east-1.amazonaws.com/igti-ney-prod-extract-rais:latest
-docker push 127012818163.dkr.ecr.sa-east-1.amazonaws.com/igti-ney-prod-extract-rais:latest
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 176031035982.dkr.ecr.us-east-2.amazonaws.com
+docker build -t xp-afelipe-prod-extract-rais .
+docker tag xp-afelipe-prod-extract-rais:latest 176031035982.dkr.ecr.us-east-2.amazonaws.com/xp-afelipe-prod-extract-rais:latest
+docker push 176031035982.dkr.ecr.us-east-2.amazonaws.com/xp-afelipe-prod-extract-rais:latest
