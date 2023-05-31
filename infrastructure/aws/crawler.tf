@@ -4,7 +4,7 @@ resource "aws_glue_crawler" "glue_crawler" {
   role          = aws_iam_role.glue_role.arn
 
   s3_target {
-    path = "s3://xp-afelipe-rais-prod-processing-zone-127012818163/rais/"
+    path = "xp-afelipe-rais2-staging-processing-zone-176031035982/rais/"
   }
 
   tags = local.common_tags
