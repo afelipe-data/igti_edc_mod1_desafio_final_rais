@@ -24,4 +24,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           chmod -R +x ./CI/scripts
-          ./CI/scripts/test_and_lint.sh
+          ./CI/scripts/test_and_lint.sh staging -auto-approve
