@@ -8,7 +8,7 @@ resource "aws_lambda_function" "decompresss3" {
   #source_code_hash = filebase64sha256("../functions/fn_example_script.zip")
   runtime     = "python3.8"
   timeout     = 900
-  memory_size = 10000
+  memory_size = 3008
   // environment {
   //   variables = {
   //   }
